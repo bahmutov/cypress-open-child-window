@@ -1,8 +1,9 @@
 {
   "name": "cypress-open-child-window",
   "version": "1.0.0",
-  "description": "",
+  "description": "Example of using window.open in Cypress instead of iframe",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "http-server -c-1 -p 5001 .",
