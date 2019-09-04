@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1 -p 5001 .",
+    "cy:open": "cypress open",
+    "dev": "start-test 5001 cy:open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "3.4.1"
+    "cypress": "3.4.1",
+    "http-server": "0.11.1",
+    "start-server-and-test": "1.10.0"
   }
 }

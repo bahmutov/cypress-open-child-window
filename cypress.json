@@ -1,1 +1,6 @@
-{}
+{
+  "modifyObstructiveCode": false,
+  "baseUrl": "http://localhost:5001",
+  "viewportWidth": 400,
+  "viewportHeight": 200
+}

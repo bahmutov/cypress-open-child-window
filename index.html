@@ -1,0 +1,19 @@
+<body>
+  <script>
+    if (top !== self) {
+      console.log('top !== self !!! frame busted!')
+    } else {
+      console.log('all is good, top === self')
+    }
+  </script>
+  <div>Page body, open DevTools console</div>
+  <button>Click me</button>
+  <div id="clicked">0</div>
+  <script>
+    let clicked = 0
+    document.querySelector('button').addEventListener('click', () => {
+      console.log('clicked')
+      document.getElementById('clicked').innerText = `${clicked += 1}`
+    })
+  </script>
+</body>
