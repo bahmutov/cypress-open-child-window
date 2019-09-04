@@ -2,6 +2,8 @@
 
 Example using `window.open` to "pop" application and test it from Cypress test runner. This allows `top === self` and bypasses what many windows do to frame-bust, see [cypress/issues/886](https://github.com/cypress-io/cypress/issues/886).
 
+Read [Cypress using child window](https://glebbahmutov.com/blog/cypress-using-child-window/).
+
 See [cypress/integration/spec.js](cypress/integration/spec.js), but basically there is a custom command `cy.openWindow` that uses `window.open` to create a child window linked back synchronously to the opener window. This still lets Cypress work.
 
 ![Child window](images/child-window.png)
