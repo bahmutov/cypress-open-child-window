@@ -2,6 +2,7 @@
   <script>
     if (top !== self) {
       console.log('top !== self !!! frame busted!')
+      location = 'http://www.cypress.io'
     } else {
       console.log('all is good, top === self')
     }

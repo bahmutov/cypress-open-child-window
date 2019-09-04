@@ -30,7 +30,7 @@ Cypress.Commands.add('openWindow', (url, features) => {
   })
 })
 
-it('is frame busted', () => {
+it('counts clicks', () => {
   // cy.visit('/')
   cy.openWindow('/')
   cy.contains('Page body')
